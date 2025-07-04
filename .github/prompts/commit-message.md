@@ -6,7 +6,7 @@ Output Requirements:
 - Tone: Concise and objective
 - Length: Max 72 characters
 - Capitalization: Start message with a lowercase letter
-- Output only the commit message string—no commentary, headers, or extra text
+- Output only the commit message string, no commentary, emojis, headers, or extra text
 - Message will be passed directly to `git commit`, so exclude metadata or tags
 
 Commit Types:
