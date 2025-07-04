@@ -1,4 +1,5 @@
 use thiserror::Error;
+use url::Url;
 
 #[derive(Error, Debug)]
 pub enum CrawlerError {
@@ -44,7 +45,7 @@ impl Default for CrawlerConfig {
 
 #[derive(Debug, Clone)]
 pub struct Page {
-    pub url: String,
+    pub url: Url,
     pub depth: usize,
     pub content: String,
     pub links: Vec<String>,

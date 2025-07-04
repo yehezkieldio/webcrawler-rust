@@ -29,7 +29,7 @@ impl Parser {
         debug!("Parsed {} links from {}", links.len(), url);
 
         Ok(Page {
-            url: url.to_string(),
+            url: url.clone(),
             depth,
             content,
             links,
